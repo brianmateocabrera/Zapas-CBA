@@ -1,0 +1,81 @@
+/* Tipografía global */
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* Títulos principales */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5em;
+}
+
+/* Navegación y botones */
+nav, .btn, header, footer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Tarjetas de producto */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Precios destacados */
+.product-price {
+  font-weight: 600;
+  color: #28a745;
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Limita el alto del carrusel y mantiene la proporción */
+#productCarousel .carousel-inner {
+  max-height: 400px; /* Ajustá según el diseño */
+  overflow: hidden;
+}
+
+#productCarousel .carousel-item img {
+  object-fit: cover;     /* Cubre sin deformar */
+  width: 100%;
+  height: 100%;
+  max-height: 400px;     /* Misma altura que el contenedor */
+}
